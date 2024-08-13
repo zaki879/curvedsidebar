@@ -16584,7 +16584,7 @@
       
       return f.tt().createScriptURL(e);
     }),
-    (f.p = "/next/"),
+    (f.p = "curvedsidebar/next/"),
     (o = { 744: 0 }),
     (f.f.j = function (e, t) {
       var n = f.o(o, e) ? o[e] : void 0;
