@@ -16580,7 +16580,7 @@
       );
     }),
     (f.tu = function (e) {
-      console.log(e)
+      console.log("this is url"+e)
       return f.tt().createScriptURL(e);
     }),
     (f.p = "https://zaki879.github.io/curvedsidebar/next/static"),
