@@ -16596,7 +16596,7 @@
       return url;
     };
     
-    (f.p = "https://zaki879.github.io/curvedsidebar/next/static"),
+    (f.p = "https://zaki879.github.io/curvedsidebar/next/"),
     (o = { 744: 0 }),
     (f.f.j = function (e, t) {
       var n = f.o(o, e) ? o[e] : void 0;
