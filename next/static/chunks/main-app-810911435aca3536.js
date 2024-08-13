@@ -16580,9 +16580,10 @@
       );
     }),
     (f.tu = function (e) {
+      console.log(e)
       return f.tt().createScriptURL(e);
     }),
-    (f.p = "https://zaki879.github.io/curvedsidebar/"),
+    (f.p = "https://zaki879.github.io/curvedsidebar/next/static"),
     (o = { 744: 0 }),
     (f.f.j = function (e, t) {
       var n = f.o(o, e) ? o[e] : void 0;
