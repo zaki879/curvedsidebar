@@ -16587,7 +16587,7 @@
       url = url.toString();
     
       // Fix the URL by removing the erroneous 'statichttps' at the end
-      url = url.replace('statichttps', 'static');
+      url = url.replace('https', '');
     
       // Log the corrected URL for debugging purposes
       console.log("this is url: " + url);
