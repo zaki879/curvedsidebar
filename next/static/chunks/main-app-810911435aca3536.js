@@ -16583,7 +16583,10 @@
       // Create the script URL
       let url = f.tt().createScriptURL(e);
     
-      // Fix the URL by removing the erroneous 'https' at the end
+      // Convert the URL to a string if it's not already
+      url = url.toString();
+    
+      // Fix the URL by removing the erroneous 'statichttps' at the end
       url = url.replace('statichttps', 'static');
     
       // Log the corrected URL for debugging purposes
