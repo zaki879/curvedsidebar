@@ -16570,7 +16570,7 @@
         void 0 === a &&
           ((a = {
             createScriptURL: function (e) {
-              return e.replace(/https:\/\/https/, 'https://').replace(/\/\//g, '/').replace('https:', 'https:')
+              return e;
             },
           }),
           "undefined" != typeof trustedTypes &&
@@ -16580,15 +16580,17 @@
       );
     }),
     f.tu = function (e) {
-      // Ensure the URL does not include any extra protocol like 'https' at the end
-      const url = f.tt().createScriptURL(e);
+      // Create the script URL
+      let url = f.tt().createScriptURL(e);
     
-      // Log the correctly constructed URL for debugging
+      // Fix the URL by removing the erroneous 'https' at the end
+      url = url.replace('statichttps', 'static');
+    
+      // Log the corrected URL for debugging purposes
       console.log("this is url: " + url);
-      console.log("this is url: " + url.replace(/https:\/\/https/, 'https://').replace(/\/\//g, '/').replace('https:', 'https:'));
     
-      // Ensure that the URL does not contain redundant parts or extra slashes
-      return url.replace(/https:\/\/https/, 'https://').replace(/\/\//g, '/').replace('https:', 'https:');
+      // Return the corrected URL
+      return url;
     };
     
     (f.p = "https://zaki879.github.io/curvedsidebar/next/static"),
