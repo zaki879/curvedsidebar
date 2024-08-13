@@ -16557,7 +16557,11 @@
         );
       (o.onerror = d.bind(null, o.onerror)),
         (o.onload = d.bind(null, o.onload)),
+        console.log(document.head.appendChild(o));
+        
         u && document.head.appendChild(o);
+        console.log(u);
+
     }),
     (f.r = function (e) {
       "undefined" != typeof Symbol &&
