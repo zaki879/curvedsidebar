@@ -16570,7 +16570,7 @@
         void 0 === a &&
           ((a = {
             createScriptURL: function (e) {
-              return e;
+              return e.replace(/https:\/\/https/, 'https://').replace(/\/\//g, '/').replace('https:', 'https:')
             },
           }),
           "undefined" != typeof trustedTypes &&
