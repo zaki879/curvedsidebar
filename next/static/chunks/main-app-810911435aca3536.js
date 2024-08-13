@@ -16579,24 +16579,12 @@
         a
       );
     }),
-    f.tu = function (e) {
-      // Create the script URL
-      let url = f.tt().createScriptURL(e);
-    
-      // Convert the URL to a string if it's not already
-      url = url.toString();
-    
-      // Fix the URL by removing the erroneous 'statichttps' at the end
-      url = url.replace('https', '');
-    
-      // Log the corrected URL for debugging purposes
-      console.log("this is url: " + url);
-    
-      // Return the corrected URL
-      return url;
-    };
-    
-    (f.p = "https://zaki879.github.io/curvedsidebar/next/"),
+    (f.tu = function (e) {
+      console.log(e);
+      
+      return f.tt().createScriptURL(e);
+    }),
+    (f.p = "/next/"),
     (o = { 744: 0 }),
     (f.f.j = function (e, t) {
       var n = f.o(o, e) ? o[e] : void 0;
