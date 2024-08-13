@@ -16579,10 +16579,18 @@
         a
       );
     }),
-    (f.tu = function (e) {
-      console.log("this is url"+e)
-      return f.tt().createScriptURL(e);
-    }),
+    f.tu = function (e) {
+      // Ensure the URL does not include any extra protocol like 'https' at the end
+      const url = f.tt().createScriptURL(e);
+    
+      // Log the correctly constructed URL for debugging
+      console.log("this is url: " + url);
+      console.log("this is url: " + url.replace(/https:\/\/https/, 'https://').replace(/\/\//g, '/').replace('https:', 'https:'));
+    
+      // Ensure that the URL does not contain redundant parts or extra slashes
+      return url.replace(/https:\/\/https/, 'https://').replace(/\/\//g, '/').replace('https:', 'https:');
+    };
+    
     (f.p = "https://zaki879.github.io/curvedsidebar/next/static"),
     (o = { 744: 0 }),
     (f.f.j = function (e, t) {
